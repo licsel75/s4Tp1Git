@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6; /* Un azul lindo para la app */
+  --color-surface: #f8fafc;
+  --color-text: #0f172a;
+  --font-display: "Inter", sans-serif;
+}
