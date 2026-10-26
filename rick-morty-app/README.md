@@ -1,16 +1,21 @@
-# React + Vite
+# Rick & Morty App - Consumo de API
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Qué es
+Una aplicación web que consume la API pública de Rick and Morty para buscar personajes, ver sus detalles y guardar favoritos que persisten en el navegador.
 
-Currently, two official plugins are available:
+## Demo
+Netlify
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## API Utilizada
+- [Rick and Morty API](https://rickandmortyapi.com/documentation)
 
-## React Compiler
+## Cómo correrlo
+1. Clonar el repositorio.
+2. Instalar dependencias: `pnpm install`
+3. Renombrar el archivo `.env.example` a `.env` (o crear uno nuevo con `VITE_API_URL=https://rickandmortyapi.com/api`).
+4. Correr el servidor: `pnpm run dev`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Decisiones y Uso de IA
+- **Custom Hooks:** Creé `useFetch` para manejar el ciclo completo de la petición (loading, error, data) y así reutilizar la lógica en cualquier endpoint. Reutilicé `useLocalStorage` del Sprint 3 para la persistencia de los favoritos.
+- **Manejo de Errores:** Usé el bloque `try/catch/finally` en el hook. Si la búsqueda no arroja resultados (error 404 de la API), el usuario ve un mensaje amigable en pantalla.
+- **IA:** Usé IA para [contar acá qué usaste, ej: "para entender cómo construir la URL dinámica" o "para repasar la sintaxis del fetch"].
