@@ -3,8 +3,10 @@
 ## Qué es
 Una aplicación web que consume la API pública de Rick and Morty para buscar personajes, ver sus detalles y guardar favoritos que persisten en el navegador.
 
-## Demo
-Netlify
+
+# Rick & Morty App - Consumo de API
+ **Demo:** [https://rick-morty-hector.netlify.app/](https://rick-morty-hector.netlify.app/)
+
 
 ## API Utilizada
 - [Rick and Morty API](https://rickandmortyapi.com/documentation)
